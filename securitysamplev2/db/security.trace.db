@@ -1,0 +1,20 @@
+2018-05-01 21:00:18 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Tabla "USERS" ya existe
+Table "USERS" already exists; SQL statement:
+create table users( username varchar(50) not null primary key, password varchar(100) not null, enabled boolean not null ) [42101-197]
+2018-09-24 06:31:42 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLException: Tabla "USERS" ya existe
+Table "USERS" already exists; SQL statement:
+create table users( username varchar(50) not null primary key, password varchar(100) not null, enabled boolean not null ) [42101-197]
+2018-09-24 06:32:18 jdbc[23]: exception
+org.h2.jdbc.JdbcSQLException: Tabla "USERS" ya existe
+Table "USERS" already exists; SQL statement:
+create table users( username varchar(50) not null primary key, password varchar(100) not null, enabled boolean not null ) [42101-197]
+2018-09-24 06:32:27 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Tabla "USERS" ya existe
+Table "USERS" already exists; SQL statement:
+create table users( username varchar(50) not null primary key, password varchar(100) not null, enabled boolean not null ) [42101-197]
+2018-09-24 06:32:43 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Error de Sintaxis en sentencia SQL "*[*]"
+Syntax error in SQL statement "*[*]"; SQL statement:
+* [42000-197]

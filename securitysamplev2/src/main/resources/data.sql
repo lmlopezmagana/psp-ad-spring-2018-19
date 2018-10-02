@@ -4,5 +4,5 @@ insert into users(username,password,enabled)
 -- Se puede generar la contraseña en BCrypt en https://www.dailycred.com/article/bcrypt-calculator 
 
 	
-insert into authorities(username,authority) 
-	values('admin','ROLE_ADMIN');
+insert into authorities(id, username,authority) 
+	values(1,'admin','ROLE_ADMIN');

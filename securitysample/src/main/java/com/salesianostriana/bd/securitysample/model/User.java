@@ -10,6 +10,8 @@ import javax.persistence.Id;
 import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
+import org.hibernate.FetchMode;
+
 /**
  * Entidad que modela un usuario del sistema.
  * 

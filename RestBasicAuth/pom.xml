@@ -5,12 +5,12 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>com.salesianostriana</groupId>
-	<artifactId>RestServices</artifactId>
+	<artifactId>RestBasicAuth</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
-	<name>RestServices</name>
-	<description>Demo of a Rest Webservice</description>
+	<name>RestBasicAuth</name>
+	<description>Demo of a Rest Webservice Basic Authentication</description>
 
 	<parent>
 		<groupId>org.springframework.boot</groupId>
@@ -51,15 +51,10 @@
 			<scope>test</scope>
 		</dependency>
 		<dependency>
-			<groupId>io.springfox</groupId>
-			<artifactId>springfox-swagger2</artifactId>
-			<version>2.9.2</version>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-security</artifactId>
 		</dependency>
-		<dependency>
-			<groupId>io.springfox</groupId>
-			<artifactId>springfox-swagger-ui</artifactId>
-			<version>2.9.2</version>
-		</dependency>
+
 	</dependencies>
 
 	<build>

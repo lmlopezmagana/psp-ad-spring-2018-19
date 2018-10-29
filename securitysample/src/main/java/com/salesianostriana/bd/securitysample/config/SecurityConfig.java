@@ -3,6 +3,7 @@ package com.salesianostriana.bd.securitysample.config;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.Profile;
 import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
@@ -12,6 +13,7 @@ import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 
 @Configuration
 @EnableWebSecurity
+//@Profile("dev")
 public class SecurityConfig extends WebSecurityConfigurerAdapter {
 
 	// Servicio que nos permite interactuar con el 
@@ -54,6 +56,8 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 			.and()
 			.logout().logoutSuccessUrl("/login?logout"); // por defecto POST a /logout
 		
+		http.csrf().disable();
+		http.headers().frameOptions().disable();
 
 		// @formatter:on
 

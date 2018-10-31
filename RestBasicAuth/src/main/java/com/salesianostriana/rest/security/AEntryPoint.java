@@ -1,4 +1,4 @@
-package com.salesianostriana.rest;
+package com.salesianostriana.rest.security;
 
 import java.io.IOException;
 import java.io.PrintWriter;

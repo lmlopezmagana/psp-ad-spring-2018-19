@@ -26,10 +26,11 @@ public class DummyService {
 		
 		User user = new User(1, "John");
 		Item item = new Item(1, "book");
+		Item item2 = new Item(2, "laptop");
 		user.addItem(item);
-		
+		user.addItem(item2);
 		listOfUsers =  Arrays.asList(user);
-		listOfItems = Arrays.asList(item);
+		listOfItems = Arrays.asList(item, item2);
 		
 	}
 

@@ -11,16 +11,16 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-//@JsonIdentityInfo(
-//		  generator = ObjectIdGenerators.PropertyGenerator.class, 
-//		  property = "id")
+@JsonIdentityInfo(
+		  generator = ObjectIdGenerators.PropertyGenerator.class, 
+		  property = "id")
 @Data @NoArgsConstructor @AllArgsConstructor
 public class User {
 	
 	private int id;
 	private String name;
 	
-	//@JsonBackReference
+//	@JsonBackReference
 	public List<Item> userItems;
 	
 	public User(int id, String name) {

@@ -8,16 +8,16 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-//@JsonIdentityInfo(
-//		  generator = ObjectIdGenerators.PropertyGenerator.class, 
-//		  property = "id")
+@JsonIdentityInfo(
+		  generator = ObjectIdGenerators.PropertyGenerator.class, 
+		  property = "id")
 @Data @NoArgsConstructor @AllArgsConstructor
 public class Item {
 	
 	private int id;
 	private String itemName;
 	
-	//@JsonManagedReference
+//	@JsonManagedReference
 	private User owner;
 	
 	public Item(int id, String itemName) {
